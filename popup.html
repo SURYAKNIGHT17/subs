@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Point-Perfect Subtitles</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        padding: 12px;
+        width: 260px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f7f7f9;
+        color: #111;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 16px;
+      }
+
+      .actions {
+        display: grid;
+        gap: 8px;
+      }
+
+      button {
+        border: 0;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      #loadVttBtn {
+        background: #0b57d0;
+        color: #fff;
+      }
+
+      #clearBtn {
+        background: #e9eaee;
+        color: #222;
+      }
+
+      #status {
+        margin-top: 10px;
+        min-height: 18px;
+        font-size: 12px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Point-Perfect Subtitles</h1>
+    <div class="actions">
+      <button id="loadVttBtn" type="button">Load .vtt file</button>
+      <button id="clearBtn" type="button">Clear subtitles</button>
+    </div>
+    <div id="status" aria-live="polite"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
